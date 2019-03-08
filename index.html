@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio da Gabrielle</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header id="topo conteiner">
+        <div class="conteudo_topo content">
+                <nav id="menu"> <!--Inicio do menu-->
+                <ul>
+                    <li><a href="#">Quem Sou</a></li>
+                    <li><a href="#">Trabalhos</a></li>
+                    <li><a href="#">Skills</a></li>
+                    <li><a href="#">Fale Comigo</a></li>
+                </ul>
+            </nav>
+            <span id="btn_home" class="botao_menu">H</span>
+        </div>
+    </header>
+    <!--fim do menu-->
+    <div id="topo_container">
+        <!--Inicio do topo-->
+        <h1>Gabrielle Lima</h1>
+        <h2>Desenvolvedora</h2>
+
+    </div>
+    <!--fim do topo-->
+    <hr />
+
+    <div id="conteudo">
+        <!--Inicio do conteudo -->
+        <div class="topo1">
+            <h2>Quem Sou</h2>
+            <picture>
+                <source media="(max-width: 767px )" srcset="">
+                <source media="(max-width: 1365px )" srcset="">
+            </picture>
+        </div>
+        <div class="topo_text">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio rerum quia quaerat dolor
+                reprehenderit perspiciatis, perferendis quae alias beatae officia facere neque blanditiis.
+                Quibusdam repudiandae alias, sed eligendi earum praesentium! Lorem ipsum dolor
+                </br>
+                sit amet consectetur adipisicing elit. Facilis aut aspernatur perspiciatis illum ipsum expedita
+                accusantium minima quisquam harum iure ab animi sunt iusto dolor dolore, earum repellat possimus
+                fugiat? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas qui expedita soluta
+                voluptatem distinctio deleniti nostrum dignissimos nesciunt laudantium nam, veniam optio alias
+                aspernatur omnis a itaque sapiente sunt. Ducimus.</p>
+            <img src="imagens/WhatsApp Image 2019-02-08 at 14.12.35.jpeg" alt="">
+        </div>
+        <hr />
+        <section class="topicos">
+            <h2>Trabalhos</h2>
+            <div class="trabalhos">
+                <article class="box">
+                    <h3>Título</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium autem totam ipsa
+                        consequuntur
+                    </p>
+                </article>
+                <article class="box">
+                    <h3>Título</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium autem totam ipsa
+                        consequuntur
+                    </p>
+                </article>
+                <article class="box">
+                    <h3>Título</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium autem totam ipsa
+                        consequuntur
+                    </p>
+                </article>
+            </div>
+        </section>
+    </div>
+    <hr />
+    <div id="skills">
+        <h2>Skills</h2>
+    </div>
+    <section class="tudo">
+        <div class="skills">
+
+
+            <article class="experiencia">
+                <h3>React</h3>
+            </article>
+            <article class="experiencia">
+                <h3>Reactnative</h3>
+            </article>
+            <article class="experiencia">
+                <h3>UX</h3>
+            </article>
+            <article class="experiencia">
+                <h3>UX</h3>
+            </article>
+            <article class="experiencia">
+                <h3>UX</h3>
+            </article>
+            <article class="experiencia">
+                <h3>UX</h3>
+            </article>
+            <article class="experiencia">
+                <h3>UX</h3>
+            </article>
+            <article class="experiencia">
+                <h3>UX</h3>
+            </article>
+            <article class="experiencia">
+                <h3>UX</h3>
+            </article>
+            <article class="experiencia">
+                <h3>UX</h3>
+            </article>
+        </div>
+        <div class="skills2">
+
+            <article class="experiencia">
+                <h3>UX</h3>
+            </article>
+        </div>
+
+    </section>
+    <hr />
+    <section class="formulario">
+        <h2>Fale Comigo</h2>
+
+        <form class="meu_form">
+
+
+
+            <p class="nome">
+                <label for="nome">Nome</label><br>
+                <input type="text" id="nomeid" placeholder="gabrielle" required="required" name="nome" />
+
+            </p>
+            <p class="fone">
+                <label for="fone">Telefone</label><br>
+                <input type="text" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+
+            </p>
+            <p class="mail">
+                <label for="email">Email</label><br>
+                <input type="email" id="emailid" placeholder="fulano@mail.com" name="email" required />
+            </p>
+            <p class="ass">
+                <label for="assunto">Assunto</label><br>
+                <input type="text" placeholder="Assunto" required>
+            </p>
+            <div class="opi">
+
+                <p>
+                    <textarea placeholder="Deixe sua opnião"></textarea>
+                </p>
+            </div>
+
+            <p class="submit">
+                <input type="submit" onclick="Enviar();" value="Enviar" />
+            </p>
+
+        </form>
+    </section>
+    <script>
+        $(function () {
+            var nav = $("#menu");
+            var botao = $("#btn_home");
+           
+            botao.on("click", function () {
+                
+                nav.toggleClass("active");
+            });
+        });
+    </script>
+
+
+</body>
+
+<div class="foter">
+    <h2>Gabrielle Cristina da Silva Lima</h2>
+    <h3>E-mail:xxxxxxxxxxxxxx</h3>
+    <h3>Telefone:7777-7777</h3>
+</div>
+
+
+
+
+<!--fim do conteudo-->
+</body>
+
+</html>
